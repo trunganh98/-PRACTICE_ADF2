@@ -3,7 +3,7 @@ package Practice;
 import java.util.List;
 
 public class StudentView {
-    public static void RunMenu() {
+    public static void main(String[] args) {
         try {
             while (true) {
                 System.out.print("\n------ Menu------\n" +
