@@ -6,15 +6,7 @@ import java.util.Scanner;
 public class Utility {
     //region DataBase_Methods
 
-    /**
-     * <b>Hiếu iceTea 22/04/2020</b> <br>
-     * <b>Lấy dữ liệu từ DataBase</b> <br>
-     *
-     * @param database Tên của cơ sở dữ liệu
-     * @param query    Câu lệnh truy vấn
-     * @return Trả về ResultSet
-     * @author Hiếu
-     */
+
     public static ResultSet executeQuery(String database, String query) {
         try {
             Connection connection = DriverManager.getConnection(
@@ -35,15 +27,7 @@ public class Utility {
         return null;
     }
 
-    /**
-     * <b>Hiếu iceTea 22/04/2020</b> <br>
-     * <b>Cập nhật dữ liệu trong DataBase</b> <br>
-     *
-     * @param database Tên của cơ sở dữ liệu
-     * @param query    Câu lệnh truy vấn
-     * @return Trả về số bản ghi bị ảnh hưởng
-     * @author Hiếu
-     */
+
     public static int executeUpdate(String database, String query) {
         try (
                 Connection connection = DriverManager.getConnection(
@@ -91,10 +75,7 @@ public class Utility {
         return scanner.nextLine();
     }
 
-    /**
-     * <b>Hiếu iceTea 2020</b> <br>
-     * <b>Nhắc người dùng và xác nhận nhấn ENTER để tiếp tục</b>
-     */
+
     public static void pause_PressEnterToContinue() {
         System.out.println("\n\tNhấn phím [Enter] để tiếp tục...");
         try {
